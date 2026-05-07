@@ -230,7 +230,6 @@ p {
 .split p,
 .join-panel p,
 .activity-grid p,
-.publish-steps p,
 .footer {
   color: var(--muted);
 }
@@ -266,8 +265,7 @@ p {
   margin-bottom: 32px;
 }
 
-.activity-grid,
-.publish-steps {
+.activity-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
@@ -280,7 +278,6 @@ p {
 }
 
 .activity-grid article,
-.publish-steps article,
 .notice {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -288,8 +285,7 @@ p {
   box-shadow: 0 10px 28px rgba(20, 38, 31, 0.06);
 }
 
-.activity-grid article,
-.publish-steps article {
+.activity-grid article {
   padding: 26px;
 }
 
@@ -315,22 +311,6 @@ p {
 .muted {
   margin-top: 18px;
   font-size: 0.92rem;
-}
-
-.publish-steps strong {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 18px;
-  border-radius: 8px;
-  background: var(--maroon);
-  color: var(--white);
-}
-
-.publish-steps span {
-  color: var(--green-deep);
-  font-weight: 800;
 }
 
 .footer {
@@ -372,8 +352,7 @@ p {
   .split,
   .join-panel,
   .values,
-  .activity-grid,
-  .publish-steps {
+  .activity-grid {
     grid-template-columns: 1fr;
   }
 
