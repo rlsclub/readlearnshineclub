@@ -48,8 +48,9 @@ if (enrollForm) {
     const isValid = fields.map(validateField).every(Boolean);
 
     if (isValid) {
-      enrollForm.reset();
+      enrollForm.submit();
       openModal();
+      window.setTimeout(() => enrollForm.reset(), 400);
     }
   });
 

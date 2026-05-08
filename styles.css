@@ -441,6 +441,15 @@ textarea:focus {
   margin-top: 8px;
 }
 
+.form-target {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Success Modal */
 .modal {
   position: fixed;

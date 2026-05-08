@@ -39,7 +39,18 @@
 
       <!-- Enrollment Form -->
       <section class="content-section">
-        <form class="enroll-form" id="enrollForm" novalidate>
+        <form
+          class="enroll-form"
+          id="enrollForm"
+          action="https://formsubmit.co/readlearnandshineclub@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+          target="formTarget"
+          novalidate
+        >
+          <input type="hidden" name="_subject" value="New Read, Learn and Shine Club Enrollment">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-grid">
             <label>
               <span>First Name</span>
@@ -109,6 +120,7 @@
 
           <button class="button primary submit-button" type="submit">Submit Enrollment</button>
         </form>
+        <iframe class="form-target" name="formTarget" title="Enrollment submission"></iframe>
       </section>
     </main>
 
