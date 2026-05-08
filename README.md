@@ -9,10 +9,19 @@ Open `index.html` in a browser.
 ## Files To Upload
 
 - `index.html`
+- `enroll.html`
+- `office-bearers.html`
+- `contact.html`
 - `styles.css`
+- `script.js`
 - `README.md`
 - `assets/hero-library-club.png`
 - `assets/read-learn-shine-logo.png`
+- `assets/jacqueline-thabah.jpg`
+- `assets/betbhalin-lyngdoh.jpg`
+- `assets/roseline-kharumnuid.jpg`
+- `assets/rudolf-carey-chyne.jpg`
+- `assets/mejuri-shisha-dopri.jpeg`
 
 ## Publish Free Without Buying Hosting or a Domain
 

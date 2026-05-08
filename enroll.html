@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Enroll in the Read, Learn and Shine Club.">
+    <title>Enroll | Read, Learn and Shine Club</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Read, Learn and Shine Club home">
+        <img class="brand-logo" src="assets/read-learn-shine-logo.png" alt="Read, Learn and Shine Club logo">
+        <span>
+          <strong>Read, Learn and Shine Club</strong>
+          <small>DLIS, NEHU Shillong</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a class="active" href="enroll.html">Enroll</a>
+        <a href="office-bearers.html">Office Bearers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero enroll-hero">
+        <div>
+          <p class="eyebrow">Enrollment</p>
+          <h1>Join the Read, Learn and Shine Club</h1>
+          <p>Share your details and areas of interest. The form is ready for future backend integration.</p>
+        </div>
+      </section>
+
+      <!-- Enrollment Form -->
+      <section class="content-section">
+        <form class="enroll-form" id="enrollForm" novalidate>
+          <div class="form-grid">
+            <label>
+              <span>First Name</span>
+              <input type="text" name="firstName" required>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Last Name</span>
+              <input type="text" name="lastName" required>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Gender</span>
+              <select name="gender" required>
+                <option value="">Select gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+              </select>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Email Address</span>
+              <input type="email" name="email" required>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Phone Number</span>
+              <input type="tel" name="phone" required inputmode="tel">
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Address / Location</span>
+              <input type="text" name="location" required>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Occupation or Designation</span>
+              <input type="text" name="occupation" required>
+              <small class="error"></small>
+            </label>
+            <label>
+              <span>Organization / School / College <em>(optional)</em></span>
+              <input type="text" name="organization">
+              <small class="error"></small>
+            </label>
+          </div>
+
+          <label>
+            <span>Areas of Interest</span>
+            <textarea name="interests" rows="4" required placeholder="Reading, writing, outreach, workshops, research..."></textarea>
+            <small class="error"></small>
+          </label>
+
+          <label>
+            <span>Why do you want to join?</span>
+            <textarea name="reason" rows="5" required></textarea>
+            <small class="error"></small>
+          </label>
+
+          <label>
+            <span>Upload Profile Photo</span>
+            <input type="file" name="photo" accept="image/*" required>
+            <small class="error"></small>
+          </label>
+
+          <button class="button primary submit-button" type="submit">Submit Enrollment</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <button class="modal-close" type="button" aria-label="Close confirmation">&times;</button>
+        <div class="checkmark">✓</div>
+        <h2 id="modalTitle">Enrollment Submitted</h2>
+        <p>Thank you for enrolling in the Read, Learn and Shine Club. Confirmation of your membership will be communicated shortly.</p>
+      </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="footer">
+      <p>&copy; Read, Learn and Shine Club</p>
+      <p>Designed by Rudolf Carey Chyne</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
